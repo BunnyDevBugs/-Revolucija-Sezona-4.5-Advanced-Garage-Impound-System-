@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Revolucija Garaža</title>
+</head>
+
+<body>
+    <div class="hud-overlay"></div>
+
+    <div class="app-container">
+
+        <!-- HEADER -->
+        <header class="hud-header">
+            <div class="brand">
+                <div class="brand-text">
+                    <h1>REVOLUCIJA</h1>
+                    <span id="garage-name">GARAŽA</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <!-- Vehicle count and close button removed for cleaner UI -->
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+
+            <!-- LEFT: LIST PANEL (Autosalon Style) -->
+            <div class="side-list-panel">
+                <div class="side-list-header-row">
+                    <div class="side-list-header">LISTA VOZILA</div>
+                </div>
+
+                <div class="side-search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" id="vehicle-search" placeholder="Pretraži vozila..." oninput="handleSearch()">
+                </div>
+
+                <div class="side-list-items" id="side-list-items">
+                    <!-- JS Populated -->
+                </div>
+            </div>
+
+            <!-- RIGHT: VEHICLE INFO (Autosalon Style) -->
+            <div class="main-car-info" id="main-car-info">
+                <div style="height: 10vw;"></div>
+
+                <div class="info-header">
+                    <h2 id="car-plate">TABLICE -</h2>
+                    <h1 id="car-name">ODABERITE VOZILO</h1>
+                </div>
+
+                <div class="info-stats">
+                    <div class="istat">
+                        <span class="lbl">GORIVO</span>
+                        <span class="val" id="car-fuel">0%</span>
+                    </div>
+                    <div class="istat">
+                        <span class="lbl">MOTOR</span>
+                        <span class="val" id="car-engine">0%</span>
+                    </div>
+                    <div class="istat">
+                        <span class="lbl">KAROSERIJA</span>
+                        <span class="val" id="car-body">0%</span>
+                    </div>
+                </div>
+
+                <!-- Action Button -->
+                <div class="action-footer">
+                    <button class="action-btn" id="btn-spawn" onclick="spawnSelected()" disabled>
+                        IZVADI VOZILO <i class="bi bi-box-arrow-up-right"></i>
+                    </button>
+                    <div class="esc-hint"><span class="key">ESC</span> IZLAZ</div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <i class="bi bi-car-front"></i>
+                <p>TRENUTNO U OVOJ GARAŽI NEMATE VOZILA</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
