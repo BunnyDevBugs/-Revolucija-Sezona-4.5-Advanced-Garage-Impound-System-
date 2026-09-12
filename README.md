@@ -13,12 +13,12 @@
 ---
 
 ## 📥 Script Download & Video Preview
-You can download the script directly in GitHub
+You can download the script directly via GitHub.
 
 ### 🎥 Video Preview / Showcase
 Click the image below to watch the video preview on YouTube:
 
-[![Revolucija Season 4.5 Preview](https://www.youtube.com/watch?v=Q_UOaShY3n8)
+[![Revolucija Season 4.5 Preview](https://img.youtube.com/vi/Q_UOaShY3n8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Q_UOaShY3n8)
 
 ---
 
